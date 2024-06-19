@@ -1,0 +1,54 @@
+This is a FastAPI project that includes authentication, chat functionality. The project uses SQLAlchemy for database operations and Pydantic for schema validation.
+
+Requirements
+
+Python 3.11
+Install requirements from requirements.txt
+
+Database
+
+The project uses a SQLite database, and the database URL is set to sqlite:///./test.db.
+
+Project Structure
+The project is structured into the following directories:
+
+app: contains the main application code
+
+
+api: contains API routes for authentication and chat functionality
+database: contains database models and database connection code
+
+model: contains SQLAlchemy models
+
+schemas: contains Pydantic schema definitions
+
+websocket: contains WebSocket connection code
+
+main.py: the main application file
+
+How to Run
+Install requirements from requirements.txt
+
+Run  'uvicorn main:app --reload' to start / run the application
+
+Use a tool like curl or a web browser to interact with the API
+API Endpoints
+
+auth
+
+POST /auth/token: login and obtain an access token
+
+POST /auth/signup: create a new user
+
+Chat
+
+POST /chat/messages: create a new message
+
+GET /chat/messages/{conversationId}: get messages for a conversation
+
+
+
+
+
+License
+This project is licensed under the MIT License.
